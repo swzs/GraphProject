@@ -1,6 +1,4 @@
 #include <stdio.h>
-
-#include <fstream>
 #define MAXV 1000000
 typedef char VertexType,VexType;
 typedef int EdgeType,InfoType;

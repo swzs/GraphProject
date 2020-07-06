@@ -1,7 +1,9 @@
-nclude <stdio.h>
+#include <stdio.h>
+#include "search.h"
 #include "stats.h"
 #include <stdlib.h>
-#include <fstream>
+#include <string.h>
+
 
 int freeman_num[MAXV/2];
 int numberOfEdges(char name[])

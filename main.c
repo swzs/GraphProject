@@ -1,8 +1,9 @@
-nclude <stdio.h>
+
+#include <stdio.h>
 #include <stdlib.h>
 #include "stats.h"
 #include <string.h>
-#include <fstream>
+#include "search.h"
 int main(int agrc, char *agrv[])
 {   
 	if (agrc == 2 && (strcmp(agrv[1], "-h") == 0 || strcmp(agrv[1], "-help") == 0)){
