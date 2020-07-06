@@ -13,17 +13,23 @@ int main(int agrc, char *agrv[])
 		printf("若输入：`./search-cli -g/--graph FILE_PATH -sp/--shortestpath SEARCH_PARAMS -u STARTING_POINT -v TARGET_POINT`\n");
 		printf("SEARCH_PARAMS可为：DFS，BFS，Dijkstra\n");
 		printf("则会输出：显示以 `FILE_PATH` 为输入文件的图中 从开始点 u 到 终点 v 的用 `SEARCH_PARAMS`蒜出来的最短路径\n");
-		printf("若输入：`./search-cli -j`");
-		printf("则会输出：蒜头大魔王");
+		printf("若输入：`./search-cli -j`\n");
+		printf("则会输出：蒜头大魔王\n");
 	}else if (agrc == 2 && strcmp(agrv[1], "-j") == 0){
-		printf("      ");
+		printf("************************************************************************************************************************\n");
+		printf("**************************                                                                        **********************\n");
+		printf("*********************           -----                                               -----              *****************\n");
+		printf("******************                                                                                       ***************\n");
+		printf("****************                                                                                            ************\n");
+		printf("**************                                           ~~~~~~~~~~~~                                         **********\n");
+		printf("*************                                                                                                  *********\n");
 	}else if (agrc == 5 && (strcmp(agrv[1], "-g") == 0 || strcmp(agrv[1], "--graph") == 0) && (strcmp(agrv[3], "-s") == 0 || strcmp(agrv[3], "--stats") == 0)){
 		if (strcmp(agrv[4], "edges") == 0){
-			printf("图的边数为：%d",numberOfEdges(agrv[2]));
+			printf("图的边数为：%d\n",numberOfEdges(agrv[2]));
 		}else if (strcmp(agrv[4], "vertices") == 0){
-			printf("图的点数为：%d",numberOfVertices(agrv[2]));
+			printf("图的点数为：%d\n",numberOfVertices(agrv[2]));
 		}else if (strcmp(agrv[4], "freeman") == 0) {
-			printf("图的freemanNetworkCentrality为：%f",freemanNetworkCentrality(agrv[2]));
+			printf("图的freemanNetworkCentrality为：%f\n",freemanNetworkCentrality(agrv[2]));
 		}else{
 			printf("输入错误\n");
 		}
