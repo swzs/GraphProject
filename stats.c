@@ -22,7 +22,7 @@ int numberOfEdges(char name[])
         if(flag == '\n')
         count++;
     }
-    file_row = count + 1;
+    file_row = count;
 	fclose(fp);
 	return file_row;
 }
